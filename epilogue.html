@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+<title>LE NOIR</title>
+</head>
+<body>
+<body style="background-color:#000000; color:white; font-family:Helvetica Neue,Helvetica,Arial,sans-serif;">
+<pre>
+
+
+
+<center> <img style=width:50% src="img/epil.png"> </center>
+<center><img style=width:10% src="img/souvbl1.png">         <img style=width:10% src="img/souvbl2.png">         <img style=width:10% src="img/souvbl3.png">
+<center><img style=width:10% src="img/souvbl4.png">         <img style=width:10% src="img/souvbl5.png">         <img style=width:10% src="img/souvbl6.png">
+<center><img style=width:10% src="img/souvbl7.png">         <img style=width:10% src="img/souvbl8.png">         <img style=width:10% src="img/souvbl9.png">
+
+  <center><td><p style="color:white";><abbr title="bonjour à vous."><strong>LE LECTEUR</strong></abbr><i>, arrivé à la fin de son périple.</i>
+
+... c'est tout ?</p>
+
+<center><td><p style="color:white";><abbr title="bonjour à lui."><strong>LE NARRATEUR</strong></abbr>
+
+oui.</p>
+
+<center><td><p style="color:white";><abbr title="bonjour à vous."><strong>LE LECTEUR</strong></abbr><i>, arrivé à la fin de son périple.</i>
+
+vous n'avez répondu à aucune de mes questions.</p>
+
+<center><td><p style="color:white";><abbr title="bonjour à lui."><strong>LE NARRATEUR</strong></abbr>
+
+c'est exact.
+mais les secrets de l'univers sont fragiles;
+et je ne me risquerai pas à dévoiler ceux qui errent entre les pages de cette histoire.
+c'est fragile, ces choses-là. c'est précieux, comme une perle de pluie dans le désert.
+où est passé notre protagoniste, d'ailleurs ?
+d'où vient toute la mythologie qui repose ici ?
+
+<center><td><p style="color:white";><abbr title="bonjour."><strong>L'AUTEUR</strong></abbr>
+
+et même le narrateur s'interroge.
+protagoniste; avance.
+
+<center><td><p style="color:white";><abbr title="bonjour à lui."><strong>LE PROTAGONISTE</strong></abbr><i>, s'avançant, arrivé, lui aussi, à la fin de son voyage.</i>
+
+et la lune ? et le soleil ? et mr. flauer ?</p>
+
+<center><td><p style="color:white";><abbr title="bonjour à lui."><strong>LE NARRATEUR</strong></abbr>
+
+ne vous en faites pas pour eux.
+pas pour les astres qui parcourent le ciel, pas plus que pour le protagoniste, ou même l'auteur.
+
+<center><td><p style="color:white";><abbr title="bonjour."><strong>L'AUTEUR</strong></abbr><i>, n'ayant pas tout à fait achevé son histoire</i>
+
+et même le narrateur s'interroge.
+protagoniste; <a href="tout.html">avance.</a></center>
+<body style="background-color:#000000; color:white; font-family:Helvetica Neue,Helvetica,Arial,sans-serif;">
+    <div  style="width:350;height:300;" id=bloc></div>
+
+
+    <center> <img style=width:50% src="img/ruegang.png">
+
+
+
+
+    <a href="prologue.html">
+    <center><img style=width:5% src="img/prologueretour.png"></center>
+
+</body>
+<script language=JavaScript>
+    var chaine = "<center>et révèle au lecteur ce qu'il doit savoir, <br>au delà de ce que le narrateur ignore.";
+    var nb_car = chaine.length;
+    var tableau = chaine.split("");
+    texte = new Array;
+    var txt = '';
+    var nb_msg = nb_car - 1;
+    for (i=0; i<nb_car; i++) {
+        texte[i] = txt+tableau[i];
+        var txt = texte[i];
+    }
+
+    actual_texte = 0;
+    function changeMessage()
+    {
+        document.getElementById("bloc").innerHTML = texte[actual_texte];
+        actual_texte++;
+        if(actual_texte >= texte.length)
+            actual_texte = nb_msg;
+        }
+        if(document.getElementById)
+            setInterval("changeMessage()",50)
+    </script>
+</html>
